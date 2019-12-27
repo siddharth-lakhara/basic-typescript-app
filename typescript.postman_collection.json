@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "088f3c6a-2170-4d86-a4b9-b7b7da73bfef",
+		"name": "typescript",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"username\": \"siddharth\",\n\t\"password\": \"pwd\",\n\t\"firstName\": \"siddharth\",\n\t\"lastName\": \"lakhara\",\n\t\"mobile\": 1234567890,\n\t\"isActive\": false\n}, {\n\t\"username\": \"sid\",\n\t\"password\": \"pwd\",\n\t\"firstName\": \"siddharth\",\n\t\"lastName\": \"lakhara\",\n\t\"mobile\": 1234567890,\n\t\"isActive\": true\n}, {\n\t\"username\": \"sid1\",\n\t\"password\": \"pwd\",\n\t\"firstName\": \"siddharth\",\n\t\"lastName\": \"lakhara\",\n\t\"mobile\": 1234567890,\n\t\"isActive\": true\n}, {\n\t\"username\": \"sid2\",\n\t\"password\": \"pwd\",\n\t\"firstName\": \"siddharth\",\n\t\"lastName\": \"lakhara\",\n\t\"mobile\": 1234567890,\n\t\"isActive\": true\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/upload-users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"sid2\",\n\t\"password\": \"pwd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

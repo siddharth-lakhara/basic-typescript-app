@@ -16,7 +16,7 @@
     "@types/hapi": "^18.0.3",
     "@types/node": "^13.1.0",
     "aws-sdk": "^2.596.0",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "nodemon": "^2.0.2",
     "pg": "^7.15.1",
     "sequelize": "^5.21.3",

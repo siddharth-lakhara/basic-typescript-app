@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^19.1.1",
     "@hapi/joi": "^16.1.8",
     "@types/hapi": "^18.0.3",
     "@types/node": "^13.1.0",
